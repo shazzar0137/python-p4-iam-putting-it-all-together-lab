@@ -5,7 +5,7 @@ from app import app
 from models import db, Recipe
 
 class TestRecipe:
-    '''User in models.py'''
+    '''Recipe in models.py'''
 
     def test_has_attributes(self):
         '''has attributes title, instructions, and minutes_to_complete.'''
@@ -71,4 +71,3 @@ class TestRecipe:
                     instructions="idk lol")
                 db.session.add(recipe)
                 db.session.commit()
-
